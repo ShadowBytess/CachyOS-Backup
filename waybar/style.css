@@ -1,0 +1,51 @@
+/* Base styling and font setup */
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
+
+/* Main bar background */
+window#waybar {
+    background-color: #111111; /* Sleek true black background */
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* Shared styling for all modules to create a pill look */
+#clock,
+#pulseaudio,
+#temperature,
+#custom-power {
+background-color: #1a1a1a; /* Dark charcoal pill background */
+color: #ff8c00;            /* Dark orange accent text/icons */
+padding: 2px 15px;
+margin: 4px 4px;
+border-radius: 8px;
+border: 1px solid #333333; /* Subtle border for depth */
+}
+
+/* Highlighting the active Bluetooth connection */
+#pulseaudio.bluetooth {
+color: #ffa500;            /* Vibrant orange */
+border: 1px solid #ff8c00; /* Orange border alert */
+}
+
+/* Highlighting dangerous CPU temperatures */
+#temperature.critical {
+background-color: #ff4500; /* Red-orange warning background */
+color: #ffffff;
+border: none;
+}
+
+/* Power button contrast accent */
+#custom-power {
+background-color: #ff8c00; /* Solid orange background */
+color: #111111;            /* Black icon */
+font-size: 16px;
+padding: 2px 12px;
+margin-right: 8px;
+}
