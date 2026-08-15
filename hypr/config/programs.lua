@@ -1,0 +1,8 @@
+-- ╔══════════════════════════════════════════╗
+-- ║                PROGRAMS                  ║
+-- ╚══════════════════════════════════════════╝
+
+terminal    = "alacritty"
+fileManager = "dolphin"
+menu        = "wofi --show drun"
+browser     = "waterfox"

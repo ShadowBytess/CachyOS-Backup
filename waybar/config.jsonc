@@ -1,0 +1,32 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+
+    "modules-right": [
+        "temperature",
+        "pulseaudio",
+        "clock",
+        "custom/power"
+    ],
+
+    "temperature": {
+        "format": " {temperatureC}°C"
+    },
+
+    "pulseaudio": {
+        "format": "   {volume}%",
+        "format-bluetooth": " {desc} {volume}%",
+        "on-click": "pavucontrol"
+    },
+
+    "clock": {
+        "format": " {:%I:%M %p}"
+    },
+
+    "custom/power": {
+        "format": "⏻ ",
+        "on-click": "wlogout",
+        "tooltip": false
+    }
+}
