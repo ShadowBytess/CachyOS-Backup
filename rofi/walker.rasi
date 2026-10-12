@@ -1,0 +1,155 @@
+configuration {
+font: "JetBrainsMono Nerd Font 11";
+}
+
+window {
+location: center;
+anchor: center;
+
+width: 700px;
+
+background-color: #0d0d0d;
+border: 1px;
+border-color: #252525;
+
+padding: 18px;
+
+
+}
+
+mainbox {
+background-color: #0d0d0d;
+
+children: [
+    inputbar,
+    listview
+];
+
+spacing: 14px;
+
+
+}
+
+inputbar {
+background-color: #151515;
+
+border: 1px;
+border-color: #292929;
+
+padding: 14px;
+spacing: 12px;
+
+children: [
+    prompt,
+    entry
+];
+
+
+}
+
+prompt {
+background-color: transparent;
+
+text-color: #ff7a18;
+
+padding: 0px;
+
+
+}
+
+entry {
+background-color: transparent;
+
+text-color: #eeeeee;
+placeholder: "Search applications...";
+placeholder-color: #666666;
+
+padding: 0px;
+
+
+}
+
+listview {
+background-color: #0d0d0d;
+
+lines: 9;
+columns: 1;
+
+spacing: 3px;
+
+scrollbar: false;
+
+
+}
+
+element {
+background-color: transparent;
+
+text-color: #bdbdbd;
+
+padding: 10px 12px;
+
+
+}
+
+element-text {
+background-color: transparent;
+
+text-color: #bdbdbd;
+
+padding: 0px;
+
+
+}
+
+element-icon {
+background-color: transparent;
+
+size: 28px;
+
+padding: 0px 12px 0px 2px;
+
+
+}
+
+element selected {
+background-color: #ff7a18;
+
+text-color: #0d0d0d;
+
+padding: 10px 12px;
+
+
+}
+
+element selected element-text {
+background-color: transparent;
+
+text-color: #0d0d0d;
+
+
+}
+
+element selected element-icon {
+background-color: transparent;
+}
+
+element alternate {
+background-color: #111111;
+}
+
+element urgent {
+background-color: #d93636;
+
+text-color: #ffffff;
+
+
+}
+
+element urgent element-text {
+background-color: transparent;
+
+text-color: #ffffff;
+
+
+}

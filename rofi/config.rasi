@@ -1,0 +1,25 @@
+configuration {
+modi: "drun,run,window";
+show-icons: true;
+
+/* Application launcher */
+drun-display-format: "{name}";
+drun-match-fields: "name,generic,exec,categories,keywords";
+
+display-drun: "Apps";
+display-run: "Run";
+display-window: "Windows";
+
+/* History */
+disable-history: false;
+
+/* Basic keyboard controls */
+kb-cancel: "Escape";
+kb-accept-entry: "Return";
+
+/* Mouse */
+me-select-entry: "MousePrimary";
+me-accept-entry: "MouseDPrimary";
+
+
+}
