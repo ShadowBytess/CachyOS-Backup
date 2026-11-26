@@ -1,8 +1,3 @@
--- ╔══════════════════════════════════════════╗
--- ║             HYPRLAND CONFIG              ║
--- ║        Red / Orange / Black / Gray       ║
--- ╚══════════════════════════════════════════╝
-
 -- Appearance / theme
 require("appearance.colors")
 require("appearance.general")

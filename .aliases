@@ -1,0 +1,49 @@
+alias c="/usr/bin/clear"
+alias btctl="/usr/bin/bluetoothctl"
+alias cget="/usr/bin/curl '-OL#J'"
+alias mi="/usr/bin/micro"
+alias pm="sudo pacman"
+alias pmu="sudo pacman -Syu"
+alias pmk="sudo pacman -Syy"
+alias pmr="sudo pacman -R"
+alias pmrd="sudo pacman -Rns"
+alias dnr="dotnet run"
+alias cb="cargo build"
+alias cr="cargo run"
+alias dnb="dotnet build"
+mkcd() {
+	mkdir -p "$1" && cd "$1"
+}
+rma() {
+	sudo ip link set enp6s0 down
+	sudo macchanger -r enp6s0
+	sudo ip link set enp6s0 up
+}
+alias s8="bluetoothctl connect 9B:E5:F2:35:20:B2"
+alias W="bluetoothctl connect 49:97:3D:54:8A:84"
+alias 18="bluetoothctl connect 00:BA:4F:4C:B7:F5"
+alias co="codium ."
+alias code="codium ."
+alias codi="codium ."
+alias p="cd ~/Projects"
+alias kn="cd ~/Projects/Katnip"
+alias lu="cd ~/Projects/Lush"
+alias push="python3 ~/push.py"
+wordswap() {
+  case "$1" in
+    on)
+      sudo systemctl enable --now wordswap
+      echo "WordSwap enabled and started."
+      ;;
+    off)
+      sudo systemctl disable --now wordswap
+      echo "WordSwap stopped and disabled."
+      ;;
+    status)
+      systemctl status wordswap
+      ;;
+    *)
+      echo "Usage: wordswap [on|off|status]"
+      ;;
+  esac
+}

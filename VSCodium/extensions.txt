@@ -1,0 +1,8 @@
+dotnetdev-kr-custom.csharp
+kylinideteam.cppdebug
+ms-dotnettools.vscode-dotnet-runtime
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-python-envs
+muhammad-sammy.csharp
+rickaym.manim-sideview
